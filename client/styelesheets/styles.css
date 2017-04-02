@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 870px;
+}
+
+.wrapper{
+    margin: 50px 0;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.navbar.people{
+    background-color: #a94442;
+}
+
+.navbar.chirkut{
+    background-color: #18bc9c;
+}
+
+.navbar.filter #navbar{
+    padding: 0;
+}
+
+li.input{
+    margin: 6px 10px 0 0;
+}
+
+/*li.input input{
+    margin: 10px 10px 0 0;    
+    box-shadow: none !important;    
+}
+
+li.input input:focus{
+    box-shadow: none;    
+}*/
+
+
+/*li.input.search{
+    margin: 6px 10px 0 0;
+}
+
+li.input.search input{
+    margin: 10px 10px 0 0;
+    box-shadow: none !important;
+}*/
+
+li.input.search input:focus{
+    box-shadow: none;
+}
+
+.hero{
+    background: url('img/hero1.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    overflow: hidden;
+}
+
+.hero .content{
+    display: table-cell;
+    vertical-align: middle;
+    color: #ddd;
+    text-align: center;
+}
+
+.hero .content h3{
+    color: #ddd;    
+}
+
+.hero .content p{
+    color: #aaa;
+}
+
+.hero .content .icon{
+   
+    margin-bottom: 25px;
+}
+
+.hero .content .icon i{
+    font-size: 48px;
+    padding: 32px 36px;
+    border-radius: 50%; 
+    background-color: #000;
+    color: #18bc9c;
+    opacity: .6;   
+    
+}
+
+.hero .overlay{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+section.about,
+section.how-it-works,
+section.features,
+section.why-use{
+    padding: 100px 0 100px 0;
+}
+
+section.about{
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 0;
+}
+
+section.how-it-works{
+    background-color: #999;
+    color: #ddd;
+}
+
+section.features{
+    background-color: #f4f4f4;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section.features .item,
+section.how-it-works .item,
+section.why-use .item{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.features .item .icon,
+section.how-it-works .item .icon,
+section.why-use .item .icon{
+    margin-bottom: 25px;
+}
+
+section.how-it-works .icon i{
+    font-size: 64px;
+    color: #ddd;
+    padding: 48px;
+}
+
+section.features .icon i
+{
+    font-size: 64px;
+    color: #ddd;
+    padding: 48px;
+    background-color: #777;
+    border-radius: 50%;
+}
+
+section.why-use .icon i{
+    font-size: 64px;
+    color: #a94442;
+    padding: 48px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+section.why-use{
+    background-color: #ddd;
+}
+
+.app-footer{
+    padding: 50px 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #ddd;
+}
+
+.people-list .item{
+    border: 1px solid #ddd;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.people-list .item img{
+    width: 128px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.people-list .item .content{
+    margin: 25px 0;
+}
+
+.fab{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.fab a{
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-color:#a94442;
+    border-radius: 50%;
+    color: #ddd;
+    text-align: center;
+    line-height: 7.5;
+}
+
+.fab i{
+   font-size: 32px;
+}

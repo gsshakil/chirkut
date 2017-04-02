@@ -1,0 +1,42 @@
+<template name="Chirkuts">
+    <div class="wrapper">
+        <div class="container">
+            <div class="people-list">
+                <div class="row">
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                    <div class="col-md-4">{{> ChirkutItem}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> Fab}}
+
+</template>
+
+<template name="Fab">
+    <div class="fab">
+        <a href={{pathFor 'chirkutAdd'}}><i class="fa fa-plus"></i></a>
+    </div>
+</template>
+
+<template name="ChirkutItem">
+    <div class="item">
+        <img src="img/note1.jpg" alt="">
+        <div class="content">
+            <h5><a href="">My First Chirkut</a></h5>
+            <small>F344C9</small>
+        </div>
+    </div>
+</template>

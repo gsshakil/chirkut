@@ -1,0 +1,55 @@
+<template name="ChirkutAdd">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Type</label>
+                            <select class="form-control">
+                                <option>Note</option>
+                                <option>Adrress</option>
+                                <option>Chat</option>
+                                <option>Files</option>
+                                <option>Link</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Note</label>
+                            <input type="text" class="form-control" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Privacy</label>
+                            <br>                            
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Public
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Private
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Note</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Destruct Time</label>
+                            <select class="form-control">
+                                <option>10 Seconds</option>
+                                <option>30 Seaconds</option>
+                                <option>1 Min</option>
+                                <option>5 Min</option>
+                                <option>1 Hour</option>
+                                <option>24 Hour</option>
+                                <option>1 Week</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-block btn-primary">Create Chirkut</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

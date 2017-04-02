@@ -1,0 +1,180 @@
+<template name="Navbar">
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{pathFor 'home'}}">Chirkut</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{pathFor 'people'}}">People</a></li>
+            <li><a href="{{pathFor 'chirkuts'}}">Chirkuts</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {{#if currentUser}}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{profile.username}} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Edite Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Invite People</a></li>
+                  <li><a class="btn-logout" href="#">Logout</a></li>
+                </ul>
+              </li>
+            {{else}}
+              <li><a href="{{pathFor 'signin'}}">Sign In</a></li>                    
+              <li><a href="{{pathFor 'join'}}">Join</a></li>
+            {{/if}}
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="input search"><input type="text" class="form-control" placeholder="Search Chirkut"></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+</template>
+
+<template name="NavbarPeopleFilter">
+  <nav class="navbar people filter navbar-inverse">
+      <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="input"><input type="text" class="form-control" placeholder="Name"></li>
+            <li class="input"><input type="text" class="form-control" placeholder="Location"></li>
+            <li class="input"><input type="text" class="form-control" placeholder="Keyword"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Filters <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+</template>
+
+<template name="NavbarPeople">
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{pathFor 'home'}}">Chirkut</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{pathFor 'people'}}">People</a></li>
+            <li><a href="{{pathFor 'chirkuts'}}">Chirkuts</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {{#if currentUser}}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{profile.username}} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Edite Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Invite People</a></li>
+                  <li><a class="btn-logout" href="#">Logout</a></li>
+                </ul>
+              </li>
+            {{else}}
+              <li><a href="{{pathFor 'signin'}}">Sign In</a></li>                    
+              <li><a href="{{pathFor 'join'}}">Join</a></li>
+            {{/if}}
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    {{> NavbarPeopleFilter}}
+</template>
+
+
+<template name="NavbarChirkutFilter">
+  <nav class="navbar chirkut filter navbar-inverse">
+      <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="input"><input type="text" class="form-control" placeholder="Shorcode"></li>
+            <li class="input"><input type="text" class="form-control" placeholder="User"></li>
+            <li class="input"><select class="form-control">
+                <option>Note</option>
+                <option>Adrress</option>
+                <option>Chat</option>
+                <option>Files</option>
+                <option>Link</option>
+            </select></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Filters <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+</template>
+
+<template name="NavbarChirkut">
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{pathFor 'home'}}">Chirkut</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{pathFor 'people'}}">People</a></li>
+            <li><a href="{{pathFor 'chirkuts'}}">Chirkuts</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {{#if currentUser}}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{profile.username}} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Edite Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Invite People</a></li>
+                  <li><a class="btn-logout" href="#">Logout</a></li>
+                </ul>
+              </li>
+            {{else}}
+              <li><a href="{{pathFor 'signin'}}">Sign In</a></li>                    
+              <li><a href="{{pathFor 'join'}}">Join</a></li>
+            {{/if}}
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    {{> NavbarChirkutFilter}}
+</template>
